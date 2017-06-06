@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="#CC000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageButton
+            style="@android:style/MediaButton.Previous" />
+
+        <ImageButton
+            style="@android:style/MediaButton.Rew" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pause"
+            style="@android:style/MediaButton.Pause" />
+
+        <ImageButton
+            style="@android:style/MediaButton.Ffwd" />
+
+        <ImageButton
+            style="@android:style/MediaButton.Next" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:background="#CC000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/tv_current_time"
+            android:layout_marginLeft="5dp"
+            android:text="當前時間"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:thumb="@drawable/f_08"
+            android:progressDrawable="@drawable/progress_horizontal"
+            android:layout_weight="1"
+            android:progress="100"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:text="總時間"
+            android:id="@+id/tv_duration"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+android:layout_alignParentBottom="true"
+android:gravity="center_vertical"
+-->

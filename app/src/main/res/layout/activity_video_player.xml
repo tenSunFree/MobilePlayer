@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tensun.mobileplayer6.VideoPlayerActivity">
+
+    <io.vov.vitamio.widget.VideoView
+        android:layout_centerInParent="true"
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/control_player"
+        layout="@layout/control_player" />
+</RelativeLayout>
+
+    <!--
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content" />
+
+            -->
